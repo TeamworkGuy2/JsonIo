@@ -3,6 +3,8 @@ package twg2.io.json;
 import java.io.IOException;
 import java.util.function.BiFunction;
 
+import twg2.functions.TriConsumer;
+
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -12,8 +14,6 @@ import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.module.SimpleModule;
-
-import functionUtils.TriConsumer;
 
 /**
  * @author TeamworkGuy2

@@ -70,7 +70,10 @@ public class CustomSerializerNotWorking {
 
 		mapper.registerModule(customTypeHandlers);
 
-		Widget[] objs = { new Widget(1, Paths.get("./rsc/text.txt")), new Widget(23, new File("other.dat").toPath()) };
+		Widget[] objs = {
+				new Widget(1, Paths.get("./rsc/text.txt")),
+				new Widget(23, new File("other.dat").toPath())
+		};
 		StringWriter out = new StringWriter();
 		mapper.writeValue(out, objs);
 		Widget[] resObjs = mapper.readValue(out.toString(), Widget[].class);
@@ -90,7 +93,10 @@ public class CustomSerializerNotWorking {
 		jsonBldr.addSerializeDeserializer(Path.class, new PathSerializer(), new PathDeserializer());
 		JsonInst json = jsonBldr.build();
 
-		Widget[] objs = { new Widget(1, Paths.get("./rsc/text.txt")), new Widget(23, new File("other.dat").toPath()) };
+		Widget[] objs = {
+				new Widget(1, Paths.get("./rsc/text.txt")),
+				new Widget(23, new File("other.dat").toPath())
+		};
 		StringWriter out = new StringWriter();
 		json.stringify(objs, out);
 		Widget[] resObjs = json.parse(out.toString(), Widget[].class);
