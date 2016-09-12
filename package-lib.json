@@ -1,10 +1,10 @@
 {
-	"version" : "0.1.1",
+	"version" : "0.1.2",
 	"name" : "json-io",
 	"description" : "Jackson JSON I/O helper classes. As simple as Json.stringify(obj, System.out) and Json.parse(str, MyObject.class)",
 	"homepage" : "https://github.com/TeamworkGuy2/JsonIo",
 	"license" : "MIT",
-	"main" : "./jar/json_io.jar",
+	"main" : "./bin/json_io.jar",
 	"dependencies" : {
 		"jackson-annotations": "~2.5.0",
 		"jackson-core": "~2.5.0",

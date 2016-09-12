@@ -1,6 +1,6 @@
 JsonIo
 ==============
-version: 0.1.0
+version: 0.1.2
 
 Simple static and instance classes for easy Jackson (https://github.com/FasterXML) serialization/deserialization.  Includes ObjectMapper wrapper 'JsonInst' and ObjectMapper builder 'JsonBuilder'.
 
